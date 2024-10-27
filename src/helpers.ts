@@ -23,6 +23,8 @@ if (GLOBAL.Reflect) {
     apply = Reflect.apply;
 } else {
     const applyOfFunction = Function.prototype.apply;
+    // @ts-ignore
+    // TODO: fix
     apply = function (target: Function, ctx: any, args: ArrayLike<any>) {
         return applyOfFunction.call(target, ctx, args);
     };
