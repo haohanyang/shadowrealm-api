@@ -21,6 +21,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - uses: browser-actions/setup-chrome@v1
+      with:
+        install-chromedriver: true
     - name: Build
       run: |
         npm install
