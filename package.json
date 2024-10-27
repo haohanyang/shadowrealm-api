@@ -12,7 +12,7 @@
         "build": "webpack --config webpack.config.js",
         "playground": "python3 -m http.server -d playground",
         "install:chrome": "puppeteer browsers install chrome",
-        "test:chrome": "test262-harness --hostType=chrome --hostPath=\"$(node -e \"console.log(require('puppeteer').executablePath())\")\" --prelude=test/helpers.js --prelude=dist/polyfill.js --transformer=test/transformer.js --test262Dir=test/test262 test/test262/test/built-ins/ShadowRealm/**/*.js",
+        "test:chrome": "test262-harness --hostType=chrome --hostPath=\"$(node -e \"console.log(require('puppeteer').executablePath())\")\" --prelude=test/helpers.js --host-args=\"--disable-dev-shm-usage --no-sandbox\" --prelude=dist/polyfill.js --transformer=test/transformer.js --test262Dir=test/test262 test/test262/test/built-ins/ShadowRealm/**/*.js",
         "clean": "rm -rf dist"
     },
     "repository": {
