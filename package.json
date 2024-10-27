@@ -11,7 +11,7 @@
     "scripts": {
         "build": "webpack --config webpack.config.js",
         "playground": "python3 -m http.server -d playground",
-        "test": "test262-harness --hostType=chrome --hostPath=`which chrome` --prelude=test/helpers.js --prelude=dist/polyfill.js --transformer=test/transformer.js --test262Dir=test/test262 test/test262/test/built-ins/ShadowRealm/**/*.js",
+        "test": "test262-harness --hostType=chrome --hostPath=`which chrome` --host-args=\"--disable-dev-shm-usage --no-sandbox\" --prelude=test/helpers.js --prelude=dist/polyfill.js --transformer=test/transformer.js --test262Dir=test/test262 test/test262/test/built-ins/ShadowRealm/**/*.js",
         "clean": "rm -rf dist"
     },
     "repository": {
