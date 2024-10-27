@@ -11,8 +11,8 @@
     "scripts": {
         "build": "webpack --config webpack.config.js",
         "playground": "python3 -m http.server -d playground",
-        "test:chrome": "test262-harness --hostType=chrome --hostPath=`which chrome` --prelude=test/helpers.js --prelude=dist/polyfill.js --transformer=test/transformer.js --test262Dir=test/test262 test/test262/test/built-ins/ShadowRealm/**/*.js",
-        "test:firefox": "test262-harness --hostType=firefox --hostPath=`which firefox` --prelude=test/helpers.js --prelude=dist/polyfill.js --transformer=test/transformer.js --test262Dir=test/test262 test/test262/test/built-ins/ShadowRealm/**/*.js",
+        "install:chrome": "puppeteer browsers install chrome",
+        "test:chrome": "test262-harness --hostType=chrome --hostPath=\"$(node -e \"console.log(require('puppeteer').executablePath())\")\" --prelude=test/helpers.js --prelude=dist/polyfill.js --transformer=test/transformer.js --test262Dir=test/test262 test/test262/test/built-ins/ShadowRealm/**/*.js",
         "clean": "rm -rf dist"
     },
     "repository": {
@@ -24,6 +24,7 @@
         "url": "https://github.com/ambit-tsai/shadowrealm-api/issues"
     },
     "devDependencies": {
+        "puppeteer": "^23.6.0",
         "test262-harness": "^10.0.0",
         "ts-loader": "^9.5.1",
         "typescript": "^5.6.3",

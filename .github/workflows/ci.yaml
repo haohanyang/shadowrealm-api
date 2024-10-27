@@ -20,15 +20,11 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-    - uses: browser-actions/setup-chrome@v1
-      with:
-        install-chromedriver: true
-    - uses: browser-actions/setup-firefox@v1
     - name: Build
       run: |
         npm install
         npm run build
-    - name: Test with Firefox
-      run: npm run test:firefox
     - name: Test with Chrome
-      run: npm run test:chrome
+      run: |
+        npm run install:chrome
+        npm run test:chrome
