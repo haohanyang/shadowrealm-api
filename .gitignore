@@ -131,3 +131,5 @@ dist
 
 .DS_Store
 playground/polyfill.js
+playground/bootstrap.css
+playground/bootstrap.js
