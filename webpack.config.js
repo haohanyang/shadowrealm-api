@@ -1,7 +1,11 @@
 const path = require("path");
 
+/**
+ * @type {import("webpack").Configuration}
+ */
 const libConfig = {
   entry: "./src/index.ts",
+  mode: "production",
   module: {
     rules: [
       {
@@ -20,8 +24,12 @@ const libConfig = {
   },
 }
 
+/**
+ * @type {import("webpack").Configuration}
+ */
 const polyfillConfig = {
   entry: "./src/polyfill.ts",
+  mode: "production",
   module: {
     rules: [
       {
