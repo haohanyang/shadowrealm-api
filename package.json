@@ -11,8 +11,9 @@
     "scripts": {
         "build": "webpack --config webpack.config.js",
         "playground": "python3 -m http.server -d playground",
-        "install:chrome": "puppeteer browsers install chrome",
-        "test:chrome": "test262-harness --hostType=chrome --hostPath=\"$(node -e \"console.log(require('puppeteer').executablePath())\")\" --prelude=test/helpers.js --host-args=\"--disable-dev-shm-usage --no-sandbox --headless\" --prelude=dist/polyfill.js --transformer=test/transformer.js --test262Dir=test/test262 test/test262/test/built-ins/ShadowRealm/**/*.js",
+        "install:chrome": "puppeteer browsers install chrome-headless-shell",
+        "clear": "puppeteer browsers clear",
+        "test:chrome": "test262-harness --hostType=chrome --hostPath=$(find .cache -type f -name \"chrome-headless-shell\") --prelude=test/helpers.js --prelude=dist/polyfill.js --transformer=test/transformer.js --test262Dir=test/test262 test/test262/test/built-ins/ShadowRealm/**/*.js",
         "clean": "rm -rf dist"
     },
     "repository": {
