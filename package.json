@@ -13,7 +13,7 @@
         "playground": "python3 -m http.server -d playground",
         "install:chrome": "puppeteer browsers install chrome-headless-shell",
         "clear": "puppeteer browsers clear",
-        "test:chrome": "test262-harness --hostType=chrome --hostPath=$(find .cache -type f -name \"chrome-headless-shell\") --prelude=test/helpers.js --prelude=dist/polyfill.js --transformer=test/transformer.js --test262Dir=test/test262 test/test262/test/built-ins/ShadowRealm/**/*.js",
+        "test": "bash test/run_test.sh",
         "clean": "rm -rf dist"
     },
     "repository": {

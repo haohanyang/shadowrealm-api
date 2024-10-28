@@ -27,4 +27,4 @@ jobs:
     - name: Test with Chrome
       run: |
         npm run install:chrome
-        npm run test:chrome
+        npm run test
