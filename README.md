@@ -12,21 +12,21 @@ declare class ShadowRealm {
 
 ## Install
 ```
-npm i -S shadowrealm-api
+npm i -S @haohanyang/shadowrealm-api
 ```
 
 
 ## Usage
 ### Po**n**yfill: non-invasive
 ```javascript
-import ShadowRealm from 'shadowrealm-api'
+import ShadowRealm from '@haohanyang/shadowrealm-api'
 
 const realm = new ShadowRealm();
 ```
 
 ### Po**l**yfill: patch up the global object
 ```javascript
-import 'shadowrealm-api/dist/polyfill'
+import '@haohanyang/shadowrealm-api/dist/polyfill'
 
 const realm = new ShadowRealm();
 ```
@@ -78,6 +78,6 @@ Use polyfills:
 ```js
 import "fetch polyfill";
 import "URL polyfill";
-import "shadowrealm-api/dist/polyfill";
+import "@haohanyang/shadowrealm-api/dist/polyfill";
 // Your codes
 ```
