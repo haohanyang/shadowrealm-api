@@ -8,7 +8,7 @@ declare class ShadowRealm {
     importValue(specifier: string, bindingName: string): Promise<Primitive | Function>;
 }
 ```
-<a href="https://ambit-tsai.github.io/shadowrealm-api/" target="_blank">Try it now 🎉</a>
+<a href="https://shadowrealm-playground.netlify.app" target="_blank">Try it now 🎉</a>
 
 ## Install
 ```

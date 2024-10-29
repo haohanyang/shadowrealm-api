@@ -6,6 +6,7 @@ scripts/
 src/
 test/
 .cache/
+.github/
 .gitignore
 .gitmodules
 .prettierignore
