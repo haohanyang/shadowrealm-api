@@ -5,6 +5,7 @@ node_modules/
 scripts/
 src/
 test/
+.cache/
 .gitignore
 .gitmodules
 .prettierignore
@@ -12,3 +13,5 @@ test/
 .prettierrc.js
 chromedriver.exe
 geckodriver.exe
+playground
+.puppeteerrc.js

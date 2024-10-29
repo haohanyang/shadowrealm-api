@@ -3,8 +3,7 @@
     "version": "0.8.2",
     "description": "ShadowRealm polyfill for browser",
     "author": {
-        "name": "Ambit Tsai",
-        "email": "ambit_tsai@qq.com"
+        "name": "Haohan Yang"
     },
     "license": "Apache-2.0",
     "main": "dist/index.js",
@@ -18,11 +17,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ambit-tsai/shadowrealm-api.git"
+        "url": "git+https://github.com/haohanyang/shadowrealm-api.git"
     },
-    "homepage": "https://github.com/ambit-tsai/shadowrealm-api#readme",
+    "homepage": "https://github.com/haohanyang/shadowrealm-api#readme",
     "bugs": {
-        "url": "https://github.com/ambit-tsai/shadowrealm-api/issues"
+        "url": "https://github.com/haohanyang/shadowrealm-api/issues"
     },
     "devDependencies": {
         "puppeteer": "^23.6.0",

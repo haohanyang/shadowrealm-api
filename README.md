@@ -1,7 +1,6 @@
 # ShadowRealm API Polyfill
 A implementation of the <a href="https://tc39.es/proposal-shadowrealm" target="_blank">ShadowRealm API Proposal</a>, a JavaScript sandbox, test with <a href="https://github.com/tc39/test262/tree/main/test/built-ins/ShadowRealm" target="_blank">TC39 Test262</a> cases.
 
-[简体中文](https://gitee.com/ambit/shadowrealm-api) | English
 ```ts
 declare class ShadowRealm {
     constructor();
@@ -82,9 +81,3 @@ import "URL polyfill";
 import "shadowrealm-api/dist/polyfill";
 // Your codes
 ```
-
-
-## Contact
-1. WeChat: cai_fanwei
-1. QQ Group: 663286147
-1. E-mail: ambit_tsai@qq.com
