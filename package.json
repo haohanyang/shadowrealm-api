@@ -1,5 +1,5 @@
 {
-    "name": "shadowrealm-api",
+    "name": "@haohanyang/shadowrealm-api",
     "version": "0.8.2",
     "description": "ShadowRealm polyfill for browser",
     "author": {
